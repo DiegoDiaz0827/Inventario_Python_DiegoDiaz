@@ -6,10 +6,13 @@ def actualizar_producto():
    if producto["NOMBRE"]== nombrebusqueda:
       print("NOMBRE ACTUAL:",producto["NOMBRE"])
       print("CANTIDAD ACTUAL:",producto["CANTIDAD"])
+      print("CATEGORIA ACTUAL:",producto["CATEGORIA"])
       nuevonombre=(input("ingrese el nuevo nombre: "))
       producto["NOMBRE"] = nuevonombre
       nuevacantidad=int(input("ingrese la nueva cantidad:"))
       producto["CANTIDAD"]=nuevacantidad
+      nuevacategoria=(input("ingrese la nueva categoria"))
+      producto["CATEGORIA"]= nuevacategoria
       print("producto actualizado con exito")
       return
   

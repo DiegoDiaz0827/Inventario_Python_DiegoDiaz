@@ -1,6 +1,9 @@
 from agregar_producto import inventario
 def actualizar_producto():
  while True:
+  if len(inventario)==0:
+    print("no hay productos en el inventario, por favor agregue un producto primero")
+    return
   nombrebusqueda=(input("ingrese el nombre del producto a actualizar:"))
   for producto in inventario:
    if producto["NOMBRE"]== nombrebusqueda:

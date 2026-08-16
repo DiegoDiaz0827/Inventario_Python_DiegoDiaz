@@ -10,7 +10,12 @@ from ventadeproductos import vender_productos
 while True:
   menu()
 
-  accion= int(input("Que accion deseas realizar?\n"))
+  accion= input("Que accion deseas realizar?\n")
+
+  if not accion.isdigit():
+    print("opcion invalida, intenta nuevamente")
+    continue
+  accion = int(accion)
   if accion==1:
    agregar_producto()
   if accion==2:
@@ -29,7 +34,7 @@ while True:
   if accion ==8:
     print("saliendo del programa...")
     break
-  if accion<0 or accion>8:
+  if accion<0 or accion>8 :
     print("opcion invalida, intenta nuevamente")
     
      

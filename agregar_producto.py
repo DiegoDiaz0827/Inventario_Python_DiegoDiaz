@@ -6,7 +6,7 @@ def agregar_producto ():
    while True:
     cantidad= int(input("ingrese la cantidad del producto:"))
     if cantidad<0 :
-     print("Numero invalido.".upper())
+     print("Numero invalido g.".upper())
     else:
      print("producto registrado con exito!")
      print(f"Nombre:{nombre}\nCantidad:{cantidad}".upper())

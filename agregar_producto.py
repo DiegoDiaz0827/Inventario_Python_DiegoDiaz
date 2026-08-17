@@ -1,7 +1,7 @@
 inventario=[]
 def agregar_producto ():
   
-   nombre= input("Ingrese el nombre del producto:")
+   nombre= input("Ingrese e el nombre del producto:")
    
    while True:
     cantidad= int(input("ingrese la cantidad del producto:"))
